@@ -59,7 +59,7 @@ Run the image again, this time you probably want to give it a name for using som
       jenserat/seafile
 
 For proxying Seafile using nginx, enable FastCGI by adding `-e fastcgi=true`.
-
+这个地方很重要.
 ## Updates and Maintenance
 
 The Seafile binaries are stored in the permanent volume `/opt/seafile`. To update the base system, just stop and drop the container, update the image using `docker pull jenserat/seafile` and run it again. To update Seafile, follow the normal upgrade process described in the [Seafile upgrade manual](https://github.com/haiwen/seafile/wiki/Upgrading-Seafile-Server). `download-seafile` might help you with the first steps if already updated to the newest version.
